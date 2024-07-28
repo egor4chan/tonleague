@@ -1,12 +1,11 @@
 
-
 $('#ton').on('click', function() {
    
-        let tg = window.Telegram.WebApp; 
-        let username = tg.initDataUnsafe.username;
+    let tg = window.Telegram.WebApp; 
+    let username = tg.initDataUnsafe.user.username;
 
-        let usernameHtml = document.getElementById('username1')
-        usernameHtml.innerHTML = username;
+    let usernameHtml = document.getElementById('username1')
+    usernameHtml.innerHTML = username;
 
     let energy = $('#myenergy').html();
     let htmlEnergy= document.getElementById('myenergy')
