@@ -1,7 +1,6 @@
 
-$('#ton').on('click', function() {
+$('#clicker').on('click', function() {
    
-    
    
     let energy = $('#myenergy').html();
     let htmlEnergy= document.getElementById('myenergy')
