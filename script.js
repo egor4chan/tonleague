@@ -1,4 +1,13 @@
+
+
 $('#ton').on('click', function() {
+   
+        let tg = window.Telegram.WebApp; 
+        let username = tg.initDataUnsafe.username;
+
+        let usernameHtml = document.getElementById('username1')
+        usernameHtml.innerHTML = username;
+
     let energy = $('#myenergy').html();
     let htmlEnergy= document.getElementById('myenergy')
     let newEnergy = Number(energy) - 1;

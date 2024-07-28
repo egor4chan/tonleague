@@ -13,6 +13,11 @@
 </head>
 <body>
     <center>
+    <div id="username">
+        <h3 id="username1">Mefer</h3>
+    </div>
+    </center>
+    <center>
         <h4>TON</h4>
     <p id="balance">0.000000</p>
     </center>
@@ -37,10 +42,19 @@
 
     
 
-    
+    <script>
+
+        let tg = window.Telegram.WebApp; 
+        let username = tg.initDataUnsafe.username;
+
+        let usernameHtml = document.getElementById('username1')
+        usernameHtml.innerHTML = username;
+
+    </script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="th.js"></script>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </body>
 </html>
