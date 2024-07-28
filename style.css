@@ -289,7 +289,7 @@ div#items > div >img {
     background-color:#1e81cc;
     border-radius: 8px;
     border: 1px solid #7fc1f3;
-    color: white;
+    color: rgb(193, 230, 255);
     text-align: left;
 
     position: relative;
@@ -304,6 +304,7 @@ div#items > div >img {
     top: 34px;
     left: 20px;
     font-size: 30px;
+    color: rgb(193, 230, 255);
 }
 
 #nick {
