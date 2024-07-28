@@ -1,4 +1,8 @@
 var WebApp = window.Telegram.WebApp;
 
 WebApp.expand();
-WebApp.showAlert(WebApp.initDataUnsafe.user.username);
+
+var username = WebApp.initDataUnsafe.user.username;
+
+var nick_html = document.getElementById('nick');
+nick_html.innerHTML = `@${username}`;

@@ -23,7 +23,7 @@ div#shadow {
 }
 
 h4 {
-    top: 120px;
+    top: 70px;
     position: relative;
     color: aliceblue;
 }
@@ -32,7 +32,7 @@ p {
     color: white;
     font-size: 50px;
     position: relative;
-    top: 120px;
+    top: 70px;
 }
 
 div.manager {
@@ -55,7 +55,7 @@ div.ton > img {
 
     left: 11%;
     right: 11%;
-    top: 33%;
+    top: 35%;
     user-select: none;
 }
 
@@ -84,13 +84,13 @@ div.manager > div:hover {
 
 
 div.manager > div#team {
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 15px 0px 0px 15px;
 }
 div.manager > div#shop {
     border-radius: 0px 0px 0px 0px;
 }
 div.manager > div#profile {
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0px 15px 15px 0px;
 }
 
 div#market-window {
@@ -273,4 +273,44 @@ div#items > div >img {
     right: 20px;
     top: 10px;
     height: 80%;
+}
+
+#indo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#indo > div {
+    height: 60px;
+    width: 34%;
+    left: 4%;
+    margin-left: 1%;
+    background-color:#1e81cc;
+    border-radius: 8px;
+    border: 1px solid #7fc1f3;
+    color: white;
+    text-align: left;
+
+    position: relative;
+    top: 50px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#indo > div > p {
+    position: absolute;
+    top: 34px;
+    left: 20px;
+    font-size: 30px;
+}
+
+#nick {
+    color: white;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 400;
 }
