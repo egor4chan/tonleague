@@ -249,7 +249,7 @@ footer {
 }
 
 #d {
-    top: 460px;
+    top: 260px;
     position: relative;
     width: 90%;
     height: 50px;
@@ -260,4 +260,17 @@ footer {
     color:rgb(25, 132, 219);
     font-weight: 700;
     font-size: 18px;
+}
+
+img#shake {
+    position: relative;
+    top: 140px;
+    width: 50%;
+}
+
+div#items > div >img {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    height: 80%;
 }

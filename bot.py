@@ -10,7 +10,7 @@ dp = Dispatcher()
 async def address_check(message: Message):
 
     markup = InlineKeyboardMarkup(inline_keyboard=[
-    [InlineKeyboardButton(text='Play Now', web_app=WebAppInfo(url='https://egor4chan.github.io/tonleague/'))],
+    [InlineKeyboardButton(text='Play Now', web_app=WebAppInfo(url='https://egor4chan.github.io/testtg/'))],
     [InlineKeyboardButton(text='Subscribe to the channel', callback_data='withdraw')]
 ])
 
