@@ -6,6 +6,7 @@
 body {
     background-color: #1e81cc; /*#30a7ff*/
     font-family: 'Inter';
+    touch-action: manipulation;
 }
 
 div#shadow {
@@ -57,6 +58,7 @@ div.ton > img {
     right: 19%;
     top: 38%;
     user-select: none;
+    touch-action: manipulation;
 }
 
 div.ton > img:active {
