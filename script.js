@@ -1,7 +1,9 @@
+let tg = window.Telegram.WebApp; 
+tg.expand()
 
 $('#ton').on('click', function() {
    
-    let tg = window.Telegram.WebApp; 
+    
     let username = tg.initDataUnsafe.user.username;
 
     let usernameHtml = document.getElementById('username1')
