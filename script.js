@@ -65,7 +65,7 @@ function add_clicker_effect(x, y) {
     }, 100)
 }
 
-clicker.addEventListener('mousemove', function (event) {
+clicker.addEventListener('click', function (event) {
     // добавляем обработчик события "mousemove"
     const x = event.clientX; // получаем координату X мыши
     const y = event.clientY; // получаем координату Y мыши
