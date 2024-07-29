@@ -35,3 +35,5 @@ setInterval(energy_limit, 2000)
 
 var clicker = document.getElementById('clicker');
 clicker.onclick = click;
+var nick = document.getElementById('nick');
+nick.innerHTML = '@' + window.localStorage.getItem('nick');
