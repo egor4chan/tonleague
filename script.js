@@ -1,5 +1,6 @@
 
 function click() {
+    window.navigator.vibrate(100);
     let energy = document.getElementById('myenergy').innerHTML; // $('#myenergy').html();
     let htmlEnergy= document.getElementById('myenergy')
     let newEnergy = Number(energy) - 1;
