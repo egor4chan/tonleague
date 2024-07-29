@@ -1,5 +1,14 @@
 
+function shake() {
+    let ton = document.getElementById('clicker');
+    ton.style.scale = '1.02';
+    setTimeout(function() {
+        ton.style.scale = '1';
+    }, 100)
+}
+
 function click() {
+    shake();
     let energy = document.getElementById('myenergy').innerHTML; // $('#myenergy').html();
     let htmlEnergy= document.getElementById('myenergy')
     let newEnergy = Number(energy) - 1;
@@ -37,3 +46,27 @@ var clicker = document.getElementById('clicker');
 clicker.onclick = click;
 var nick = document.getElementById('nick');
 nick.innerHTML = '@' + window.localStorage.getItem('nick');
+
+function add_clicker_effect(x, y) {
+    let el = document.createElement("h6");
+    el.setAttribute('id', 'counter')
+    el.innerHTML = '+1';
+    el.style.position = 'absolute';
+    el.style.top = `${y}px`
+    el.style.left = `${x}px`
+    document.body.appendChild(el)
+    el.onclick = click;
+    setTimeout(function() {
+        el.remove();
+    }, 100)
+}
+
+clicker.addEventListener('mousemove', function (event) {
+    // добавляем обработчик события "mousemove"
+    const x = event.clientX; // получаем координату X мыши
+    const y = event.clientY; // получаем координату Y мыши
+  
+    add_clicker_effect(x, y)
+    
+    console.log(`Координаты мыши: x=${x}, y=${y}`); // выводим координаты мыши в консоль
+  });

@@ -7,6 +7,7 @@ body {
     background-color: #1e81cc; /*#30a7ff*/
     font-family: 'Inter';
     touch-action: manipulation;
+    overflow-x: hidden;
 }
 
 div#shadow {
@@ -61,9 +62,7 @@ div.ton > img {
     touch-action: manipulation;
 }
 
-div.ton > img:active {
-    scale: 0.99;
-}
+
 
 div.manager > div {
     flex-wrap: wrap;
@@ -316,4 +315,25 @@ div#items > div >img {
     left: 20px;
     font-size: 16px;
     font-weight: 400;
+}
+
+#counter {
+    font-size: 28px;
+    color: white;
+    animation: countup forwards 0.3s ease;
+}
+
+@keyframes countup {
+    from {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+        scale: 1.5;
+    }
+    to {
+        opacity: 0;
+        scale: 1.6;
+        top: 200px
+    }
 }
