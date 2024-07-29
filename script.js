@@ -1,3 +1,4 @@
+
 function click() {
     let energy = document.getElementById('myenergy').innerHTML; // $('#myenergy').html();
     let htmlEnergy= document.getElementById('myenergy')
@@ -6,6 +7,9 @@ function click() {
     let htmlBalance = document.getElementById('balance')
     let newBalance = parseFloat(balance) + 0.000001;
     
+    window.localStorage.setItem('balance', newBalance.toFixed(6));
+    console.log('balance new is ', window.localStorage.getItem('balance'));
+
     if (Number(energy) != 0) {
         htmlEnergy.innerHTML = newEnergy;
         htmlBalance.innerHTML = newBalance.toFixed(6);    
@@ -20,7 +24,7 @@ function energy_limit() {
     if (Number(energy) < 100) {
         var new_energy = Number(energy) + 1;
         var r = document.getElementById('myenergy').innerHTML = new_energy;
-        console.log('energy was plused', new_energy)
+        
     }
     else {
         console.log('energy is full');
