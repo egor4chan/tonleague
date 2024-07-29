@@ -62,7 +62,7 @@ function add_clicker_effect(x, y) {
     el.onclick = click;
     setTimeout(function() {
         el.remove();
-    }, 100)
+    }, 200)
 }
 
 clicker.addEventListener('click', function (event) {

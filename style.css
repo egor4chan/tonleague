@@ -318,22 +318,32 @@ div#items > div >img {
 }
 
 #counter {
-    font-size: 28px;
+    font-size: 32px;
     color: white;
-    animation: countup forwards 0.3s ease;
+    animation: countup forwards 3.3s ease;
 }
 
 @keyframes countup {
     from {
         opacity: 1;
     }
+    10% {
+        scale: 1.5;
+    }
+    30% {
+        opacity: 0.9;
+    }
+    50% {
+        top: -400px;
+    }
     80% {
         opacity: 0.7;
         scale: 1.5;
+        
     }
     to {
         opacity: 0;
-        scale: 1.6;
-        top: 200px
+        scale: 2.6;
+        
     }
 }
