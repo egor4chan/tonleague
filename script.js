@@ -1,14 +1,11 @@
-
-$('#clicker').on('click', function() {
-   
-   
-    let energy = $('#myenergy').html();
+function click() {
+    let energy = document.getElementById('myenergy').innerHTML; // $('#myenergy').html();
     let htmlEnergy= document.getElementById('myenergy')
     let newEnergy = Number(energy) - 1;
-    let balance = $('#balance').html();
+    let balance = document.getElementById('balance').innerHTML;
     let htmlBalance = document.getElementById('balance')
     let newBalance = parseFloat(balance) + 0.000001;
-
+    
     if (Number(energy) != 0) {
         htmlEnergy.innerHTML = newEnergy;
         htmlBalance.innerHTML = newBalance.toFixed(6);    
@@ -16,17 +13,21 @@ $('#clicker').on('click', function() {
     else {
         console.log('Energy limit!')
     }
-    
-})
+}
 
-$('#mine').on('click', function() {
+function energy_limit() {
+    let energy = document.getElementById('myenergy').innerHTML;
+    if (Number(energy) < 100) {
+        var new_energy = Number(energy) + 1;
+        var r = document.getElementById('myenergy').innerHTML = new_energy;
+        console.log('energy was plused', new_energy)
+    }
+    else {
+        console.log('energy is full');
+    }
+}
 
-})
+setInterval(energy_limit, 2000)
 
-$('#shop').on('click', function() {
-
-})
-
-$('#profile').on('click', function() {
-    Location.href('/team.html')
-})
+var clicker = document.getElementById('clicker');
+clicker.onclick = click;
